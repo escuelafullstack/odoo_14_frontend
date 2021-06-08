@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="todo_template">
+        <div style="padding:50px">
+            <label for="task">Nueva Tarea</label>
+            <input name="task"/>
+            <button class="btn_add_task">Agregar tarea</button>
+            <br/>
+            <br/>
+            <h3>Lista de tareas</h3>
+            <ul class="list_tasks"></ul>
+        </div>
+    </t>
+</templates>

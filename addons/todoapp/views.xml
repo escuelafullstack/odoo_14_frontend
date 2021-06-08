@@ -1,0 +1,8 @@
+<odoo>
+    <record id="action_client_todo_app" model="ir.actions.client">
+        <field name="name">Todo App</field>
+        <field name="tag">todo_widget</field>
+    </record>
+
+    <menuitem id="menu_todo_app" name ="Todo App" action="action_client_todo_app" parent=""/>
+</odoo>
