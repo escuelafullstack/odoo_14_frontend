@@ -1,0 +1,9 @@
+<odoo>
+    <template id="assets" inherit_id="web.assets_backend">
+        <xpath expr="//script[last()]" position="after">
+            <!-- <script type="text/javascript" src="/sales_chart/static/src/lib/Chart.min.js"/> -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.3.2/chart.min.js" integrity="sha512-VCHVc5miKoln972iJPvkQrUYYq7XpxXzvqNfiul1H4aZDwGBGC0lq373KNleaB2LpnC2a/iNfE5zoRYmB4TRDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+            <script type="text/javascript" src="/sales_chart/static/src/js/sales.js"/>
+        </xpath>
+    </template>
+</odoo>

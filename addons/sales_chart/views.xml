@@ -1,0 +1,8 @@
+<odoo>
+    <record id="action_client_sales_chart" model="ir.actions.client">
+        <field name="name">Ventas Chart</field>
+        <field name="tag">sales_chart</field>
+    </record>
+
+    <menuitem id="menu_sales_chart" name="Ventas Chart" action="action_client_sales_chart" parent=""/>
+</odoo>

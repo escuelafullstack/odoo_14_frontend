@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="tmpl_sales_chart">
+        <div class="mt-5 ml-5">
+            <h1>Ventas Chart</h1>
+            <div style="width:400px;height:400px">
+                <canvas id="myChart" width="400" height="400"></canvas>
+                <div>
+                    <input type="checkbox" class="sale_state" data-name="sale" checked="checked"/>
+                    <label>órdenes de venta </label>
+                </div>
+                <div>
+                    <input type="checkbox" class="sale_state" data-name="draft" checked="checked"/>
+                    <label>Cotización </label>
+                </div>
+                <div>
+                    <input type="checkbox" class="sale_state" data-name="sent" checked="checked"/>
+                    <label>Presupuesto enviado </label>
+                </div>
+            </div>
+        </div>
+    </t>
+
+
+</templates>
