@@ -1,0 +1,15 @@
+<odoo>
+    <record id="view_form_res_partner_add_geo" model="ir.ui.view">
+        <field name="name">view.form.res.partner.add.geo</field>    
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//notebook" position="inside">
+                <page string="Geolocalización">
+                    <label for="geo" string="Longitud y Latitud"/>
+                    <field name="geo" widget="field_marker_map"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+</odoo>
