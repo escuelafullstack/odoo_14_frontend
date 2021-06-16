@@ -9,7 +9,7 @@
 ## Instalación de Odoo con docker
 1. Descargar el repositorio
 ~~~
-git clone https://github.com/escuelafullstack/template_odoo_docker_compose.git
+git clone https://github.com/escuelafullstack/odoo_14_frontend
 ~~~
 2. Ingresar a la carpeta 
 ~~~
