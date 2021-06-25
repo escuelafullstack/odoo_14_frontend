@@ -1,0 +1,9 @@
+
+.pos{
+    .product{
+        height: 200px;
+        &:hover{
+            background-color: aquamarine;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+<odoo>
+    <record id="view_pos_config_form_add_stock" model="ir.ui.view">
+        <field name="name">view.pos.config.form.add.stock</field>
+        <field name="model">pos.config</field>
+        <field name="inherit_id" ref="point_of_sale.pos_config_view_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//div[@id='accounting_section']" position="after">
+                <h2>Stock por Ubicación</h2>
+                <div class="row mt16 o_settings_container" id="stock_by_location">
+                    <div class="col-12 col-lg-6 o_setting_box">
+                        <div class="o_setting_left_pane">
+                            <field name="show_stock_by_location"/>
+                        </div>                  
+                        <div class="o_setting_right_pane">
+                            <label for="show_stock_by_location" string="Habilitar stock por ubicación"/>
+                            <div class="text-muted mb16">
+                                Muestra las cantidades de stock por ubicación
+                            </div>
+                            <label for="location_id" string="Ubicación" attrs="{'invisible':[('show_stock_by_location','=',False)]}"/>
+                            <field name="location_id" attrs="{'invisible':[('show_stock_by_location','=',False)]}"/>
+                        </div>                  
+                    </div>
+                </div>
+            </xpath>
+        </field>
+    </record>
+</odoo>

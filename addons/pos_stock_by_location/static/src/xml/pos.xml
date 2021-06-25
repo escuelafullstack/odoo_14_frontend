@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+
+    <t t-inherit="point_of_sale.ProductItem" t-inherit-mode="extension">
+        <xpath expr="//div[@class='product-name']" position="before">
+            <!-- <span>Cnt. Disp:  <t t-esc="props.product.qty_available" /></span> -->
+            <t t-foreach="stock_by_location" t-as="sl">
+                <span><t t-esc="sl.location_id[1]" />: <t t-esc="sl.available_quantity" /></span>
+            </t>
+        </xpath>
+        <!-- <xpath expr="//article" position="attributes">
+            <attribute name="t-on-click">spaceClickProduct</attribute>
+        </xpath> -->
+    </t>
+
+</templates>
