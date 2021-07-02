@@ -28,7 +28,7 @@ odoo.define("snippet_exchange.widget",function(require){
                     "method": "GET", 
                     "timeout": 0, 
                     "headers": 
-                        { "Authorization": "Basic ZWRnYXJhbWFkb3JAaW5nZW5pZXJvcy5jb206N2RlYzQ4OTM1MDM5NWM2MjcwODE=" }, 
+                        { "Authorization": "Basic *************" }, 
                     };
             
                 $.ajax(settings).done(function (response) { 
