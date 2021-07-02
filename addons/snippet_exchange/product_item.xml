@@ -1,0 +1,7 @@
+<odoo>
+    <template id="product_item" inherit_id="website_sale.products_item">
+        <xpath expr="//form" position="replace">
+            <a itemprop="name" t-att-href="product_href" t-att-content="product.name" t-field="product.name" />
+        </xpath>
+    </template>
+</odoo>

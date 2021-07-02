@@ -1,0 +1,35 @@
+<odoo>
+    <template id="snippets" inherit_id="website.snippets" name="Snippets Exchange">
+        <xpath expr="//div[@id='snippet_structure']//t[@t-snippet='website.s_color_blocks_2']" position="after">
+            <t t-snippet="snippet_exchange.templ_exchange" t-thumbnail="/snippet_exchange/static/src/img/exchange.png"/>
+        </xpath>
+    </template>
+
+    <template id="snippet_exchange.templ_exchange" >
+        <section class="s_exchange pt32 pb32">
+            <div>
+                <h2>Tipo de cambio</h2>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+            </div>
+            <label for="currency">Moneda</label>
+            <select name="currency">
+            </select>
+            <br/>
+            <label for="amount">Monto</label>
+            <input type="number" name="amount" value="1"/>
+            <br/>
+            <strong>Resultado:</strong> <span id="result"></span>
+        </section>
+    </template>
+
+    <template id="snippet_options" inherit_id="website.snippet_options" name="Opciones de Snippet">
+        <xpath expr="." position="inside">
+            <div data-js="SnippetExchange" data-selector=".s_exchange">
+                <we-button data-edit="" data-no-preview="true" >
+                    <i class="fa fa-pencil"/> Personalizar
+                </we-button>
+            </div>
+        </xpath>
+    </template>
+
+</odoo>

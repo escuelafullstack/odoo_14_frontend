@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<templates>
+    <t t-name="modal_edit_snippet_exchange">
+        <div>
+            <h2>Edición de Contenido</h2>
+            <div>
+                <label for="title">Título</label>
+                <input name="title" type="text"/>
+                <br/>
+                <label for="text">Párrafo</label>
+                <textarea name="text" type="text" rows="3"/>
+            </div>
+        </div>
+    </t>
+</templates>
